@@ -12,6 +12,7 @@ import {
   LogOut,
   Search,
   User,
+  Package,
 } from "lucide-react";
 import { Button } from "../ui/button";
 import { Input } from "@/components/ui/input";
@@ -43,6 +44,11 @@ const TopNavbar = ({
       path: "/work-orders",
     },
     { icon: <Wrench size={20} />, label: "Assets", path: "/assets" },
+    {
+      icon: <Package size={20} />,
+      label: "Inventory",
+      path: "/inventory",
+    },
     {
       icon: <Calendar size={20} />,
       label: "Maintenance",

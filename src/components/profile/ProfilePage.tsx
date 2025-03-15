@@ -19,6 +19,7 @@ import {
   Lock,
   Save,
   Upload,
+  Wrench,
 } from "lucide-react";
 
 const ProfilePage = () => {

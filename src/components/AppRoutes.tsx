@@ -14,6 +14,7 @@ import { useToast } from "@/components/ui/use-toast";
 import Home from "./home";
 import WorkOrdersList from "./workorders/WorkOrdersList";
 import AssetsList from "./assets/AssetsList";
+import InventoryList from "./inventory/InventoryList";
 import MaintenanceSchedule from "./maintenance/MaintenanceSchedule";
 import NotificationCenter from "./notifications/NotificationCenter";
 import SettingsPage from "./settings/SettingsPage";
@@ -159,6 +160,18 @@ const AppRoutes = () => {
               isAuthenticated ? (
                 <PageLayout>
                   <UsersManagement />
+                </PageLayout>
+              ) : (
+                <Navigate to="/login" />
+              )
+            }
+          />
+          <Route
+            path="/inventory"
+            element={
+              isAuthenticated ? (
+                <PageLayout>
+                  <InventoryList />
                 </PageLayout>
               ) : (
                 <Navigate to="/login" />
